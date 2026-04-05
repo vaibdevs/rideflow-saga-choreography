@@ -329,9 +329,18 @@ Integration tests spin up real Kafka, PostgreSQL, and Redis using Testcontainers
 ---
 
 ## LLD:
-### Full happy path end to end
+### Flow-1: Full happy path end to end
 <img width="2656" height="1434" alt="Image" src="https://github.com/user-attachments/assets/32002910-4fb8-4ba1-8b7f-8d63fd60bc6f" />
 <img width="2584" height="1494" alt="Image" src="https://github.com/user-attachments/assets/f9aa0f24-ec49-4784-a39f-18864a20ea29" />
+
+### Flow-2: No driver found
+<img width="2404" height="1488" alt="image" src="https://github.com/user-attachments/assets/6c013c3e-baef-4cc5-b004-5e5f2ac16bbb" />
+
+### Flow-3: Failure Path — Driver Offered But Nobody Accepts (Timeout)
+<img width="2404" height="1106" alt="Image" src="https://github.com/user-attachments/assets/a2632ab7-631e-4872-80c1-34d62f82759a" />
+
+### Flow-4: Payment fails
+<img width="2110" height="1500" alt="Image" src="https://github.com/user-attachments/assets/91442ba6-5d37-47c7-8b35-f6d743f65001" />
 
 ---
 
