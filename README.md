@@ -328,20 +328,10 @@ Integration tests spin up real Kafka, PostgreSQL, and Redis using Testcontainers
 
 ---
 
-## SDE-2 Concepts Demonstrated
-
-| Concept | Where |
-|---|---|
-| Choreography-based Saga | All services via Kafka |
-| Outbox pattern | `ride-service/outbox/` |
-| Idempotent consumers | `payment-service` — UNIQUE on ride_id |
-| Redis geospatial indexing | `driver-matching-service/geo/` |
-| WebSocket + Redis pub/sub | `location-tracking-service` |
-| Surge pricing algorithm | `pricing-service/SurgePricingService` |
-| Dead letter queue | `notification-service` — `.DLT` topics |
-| Circuit breaker | Resilience4j on Driver Matching |
-| Distributed tracing | Spring Sleuth + Zipkin across all services |
-| Compensating transactions | Refund flow in `payment-service` |
+## LLD:
+### Full happy path end to end
+<img width="2656" height="1434" alt="Image" src="https://github.com/user-attachments/assets/32002910-4fb8-4ba1-8b7f-8d63fd60bc6f" />
+<img width="2584" height="1494" alt="Image" src="https://github.com/user-attachments/assets/f9aa0f24-ec49-4784-a39f-18864a20ea29" />
 
 ---
 
