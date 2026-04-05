@@ -1,6 +1,6 @@
 # rideflow-saga-choreography
 
-> Uber-style ride booking system built with Java Spring Boot microservices using the **Choreography-based Saga pattern**. Services communicate exclusively via Kafka events — no service calls another directly.
+> Ride booking system built with Java Spring Boot microservices using the **Choreography-based Saga pattern**. Services communicate exclusively via Kafka events — no service calls another directly.
 
 ---
 
