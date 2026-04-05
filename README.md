@@ -342,6 +342,9 @@ Integration tests spin up real Kafka, PostgreSQL, and Redis using Testcontainers
 ### Flow-4: Payment fails
 <img width="2110" height="1500" alt="Image" src="https://github.com/user-attachments/assets/91442ba6-5d37-47c7-8b35-f6d743f65001" />
 
+### Flow-5: Driver cancels after accepting
+<img width="2820" height="1364" alt="Image" src="https://github.com/user-attachments/assets/76b6daa3-f395-420d-86bc-cf3e570fb93c" />
+
 ---
 
 ## License
