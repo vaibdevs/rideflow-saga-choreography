@@ -1,5 +1,14 @@
 # rideflow-saga-choreography
 
+![Java](https://img.shields.io/badge/Java-17-orange?style=flat-square)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.2-green?style=flat-square)
+![Kafka](https://img.shields.io/badge/Apache_Kafka-3.6-231F20?style=flat-square&logo=apachekafka&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-7-DC382D?style=flat-square&logo=redis&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-336791?style=flat-square&logo=postgresql&logoColor=white)
+![WebSocket](https://img.shields.io/badge/WebSocket-Spring-6DB33F?style=flat-square)
+![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Microservices](https://img.shields.io/badge/Architecture-Microservices-8A2BE2?style=flat-square)
+
 > Ride booking system built with Java Spring Boot microservices using the **Choreography-based Saga pattern**. Services communicate exclusively via Kafka events — no service calls another directly.
 
 ---
