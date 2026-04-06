@@ -338,6 +338,7 @@ Integration tests spin up real Kafka, PostgreSQL, and Redis using Testcontainers
 ---
 
 ## LLD:
+
 ### Flow-1: Full happy path end to end
 <img width="2656" height="1434" alt="Image" src="https://github.com/user-attachments/assets/32002910-4fb8-4ba1-8b7f-8d63fd60bc6f" />
 <img width="2584" height="1494" alt="Image" src="https://github.com/user-attachments/assets/f9aa0f24-ec49-4784-a39f-18864a20ea29" />
