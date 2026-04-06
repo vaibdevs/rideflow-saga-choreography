@@ -355,6 +355,21 @@ Integration tests spin up real Kafka, PostgreSQL, and Redis using Testcontainers
 ### Flow-5: Driver cancels after accepting
 <img width="2820" height="1364" alt="Image" src="https://github.com/user-attachments/assets/76b6daa3-f395-420d-86bc-cf3e570fb93c" />
 
+### Flow-6: Ride Service internal — Outbox pattern
+<img width="2510" height="1480" alt="Image" src="https://github.com/user-attachments/assets/90ab8831-83f1-4008-91b7-6db9f21face1" />
+
+### Flow-7: Driver Matching — concurrent requests
+<img width="1590" height="1496" alt="Image" src="https://github.com/user-attachments/assets/d7d79d44-21e6-4c63-abed-134f92acb6b6" />
+
+### Flow-8: Location Tracking — GPS pipeline
+<img width="1620" height="1492" alt="Image" src="https://github.com/user-attachments/assets/84ca2a52-9293-4fde-9f40-80eb8ba2334e" />
+
+### Flow-9: Payment idempotency
+<img width="2604" height="1336" alt="Image" src="https://github.com/user-attachments/assets/553e945c-d793-4afa-9dbb-8db72c7410fb" />
+
+### Flow-10: Notification retry + DLT
+<img width="2538" height="1486" alt="Image" src="https://github.com/user-attachments/assets/57bb7651-a75e-42b6-a362-cd9fa536f8f4" />
+
 ---
 
 ## License
