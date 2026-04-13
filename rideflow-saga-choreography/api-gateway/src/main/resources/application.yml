@@ -1,0 +1,53 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: ride-service
+          uri: http://localhost:8081
+          predicates:
+            - Path=/api/rides/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: rideServiceCB
+                fallbackUri: forward:/fallback/rides
+
+        - id: driver-matching-service
+          uri: http://localhost:8083
+          predicates:
+            - Path=/api/drivers/**
+
+        - id: location-tracking-service-ws
+          uri: ws://localhost:8084
+          predicates:
+            - Path=/ws/**
+
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
+
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowedHeaders: "*"
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+  zipkin:
+    tracing:
+      endpoint: http://localhost:9411/api/v2/spans
+
+logging:
+  level:
+    com.rideflow: DEBUG
+    org.springframework.cloud.gateway: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%X{traceId:-}] [%thread] %-5level %logger{36} - %msg%n"
